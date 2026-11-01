@@ -11,6 +11,13 @@ Each algorithm is kept in its own directory so members can contribute independen
 See [SGD/README.md](SGD/README.md) for setup and reproduction commands.
 
 This initial upload contains source code and configuration only. Datasets, saved models, predictions, logs and generated experiment results are not included; they can be generated locally using the scripts.
+## IPM
+
+[IPM/](IPM/) contains an independent NumPy implementation of a primal logarithmic-barrier interior point method for the kernel soft-margin SVM, covering the log-barrier Newton solver, a one-vs-one multiclass wrapper, the data preprocessing pipeline, and a script for reproducing the experiments and generating the summary figure.
+
+See [IPM/README.md](IPM/README.md) for setup and reproduction commands.
+
+This initial upload contains source code and configuration only. Datasets, saved models, predictions, logs and generated experiment results are not included; they can be generated locally using the scripts.
 
 ## Contributing
 
