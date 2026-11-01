@@ -1,0 +1,53 @@
+{
+  "dataset": "Kaggle parisrohan/credit-score-classification original train.csv",
+  "split_seed": 2026,
+  "epochs": 200,
+  "pilot_batch_size": 64,
+  "lambda_grid": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "eta0_grid": [
+    0.001,
+    0.01,
+    0.1,
+    0.5
+  ],
+  "powers": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "pilot_seeds": [
+    11,
+    22,
+    33
+  ],
+  "evaluation_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "batch_sizes": [
+    1,
+    16,
+    64,
+    256
+  ],
+  "training_fractions": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "job_order_seed": 7301,
+  "size_subset_seed": 809,
+  "selection_rule": "pilot mean validation macro-F1 descending, mean accuracy descending, config index ascending; batch remains 64; fixed 200 epochs; final iterate",
+  "schedule": "eta0 / (1 + samples_seen_before_update / N_train)^power",
+  "test_policy": "only the five pilot-selected baseline models; one final test phase after all development; no test sensitivity sweep",
+  "max_customers": 1500,
+  "sample_seed": 3407,
+  "raw_train_sha256": "d2ebcc056a64c48710b1aeb96777155835d372d7ad202529f64666011d214da0"
+}
