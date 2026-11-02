@@ -1,0 +1,33 @@
+{
+  "gradient_relative_errors": [
+    4.634664501914266e-10,
+    3.656464430063271e-10,
+    3.240022811139499e-10
+  ],
+  "join_derivative_error": 4.99999982256881e-07,
+  "two_loop_max_error": 1.1102230246251565e-16,
+  "solver_objective_relative_difference": 3.802642500103387e-16,
+  "custom": {
+    "f": 2.3356874059972164,
+    "ginf": 1.0526453750325793e-08,
+    "nit": 11,
+    "nfev": 13,
+    "seconds": 0.000551417000000054,
+    "success": true,
+    "status": "gradient_tolerance",
+    "skipped_updates": 0,
+    "fallback_steps": 0
+  },
+  "scipy": {
+    "f": 2.3356874059972172,
+    "ginf": 2.972253478061848e-08,
+    "nit": 11,
+    "nfev": 13,
+    "seconds": 0.0014552919999999414,
+    "success": true,
+    "status": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+    "skipped_updates": 0,
+    "fallback_steps": 0
+  },
+  "passed": true
+}

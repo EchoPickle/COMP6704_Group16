@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "f": 640.8475506552965,
+      "ginf": 9.13993848463741e-06,
+      "nit": 83,
+      "nfev": 221,
+      "seconds": 0.049911124999999945,
+      "success": true,
+      "status": "gradient_tolerance",
+      "skipped_updates": 0,
+      "fallback_steps": 4
+    },
+    {
+      "f": 864.8695424479648,
+      "ginf": 8.268563491981018e-06,
+      "nit": 56,
+      "nfev": 88,
+      "seconds": 0.020779582999999935,
+      "success": true,
+      "status": "gradient_tolerance",
+      "skipped_updates": 0,
+      "fallback_steps": 1
+    },
+    {
+      "f": 448.395118259552,
+      "ginf": 8.504841301190929e-06,
+      "nit": 64,
+      "nfev": 171,
+      "seconds": 0.03874724999999968,
+      "success": true,
+      "status": "gradient_tolerance",
+      "skipped_updates": 0,
+      "fallback_steps": 4
+    }
+  ],
+  "test": {
+    "accuracy": 0.6150740242261103,
+    "macro_f1": 0.5747762005403773,
+    "confusion_matrix": [
+      [
+        493,
+        571,
+        151
+      ],
+      [
+        254,
+        1739,
+        426
+      ],
+      [
+        14,
+        300,
+        510
+      ]
+    ]
+  },
+  "feature_names": [
+    "numeric__Age",
+    "numeric__Annual_Income",
+    "numeric__Monthly_Inhand_Salary",
+    "numeric__Num_Bank_Accounts",
+    "numeric__Num_Credit_Card",
+    "numeric__Interest_Rate",
+    "numeric__Num_of_Loan",
+    "numeric__Delay_from_due_date",
+    "numeric__Num_of_Delayed_Payment",
+    "numeric__Changed_Credit_Limit",
+    "numeric__Num_Credit_Inquiries",
+    "numeric__Outstanding_Debt",
+    "numeric__Credit_Utilization_Ratio",
+    "numeric__Credit_History_Age",
+    "numeric__Amount_invested_monthly",
+    "numeric__Monthly_Balance",
+    "categorical__Credit_Mix_Bad",
+    "categorical__Credit_Mix_Good",
+    "categorical__Credit_Mix_Standard",
+    "categorical__Payment_of_Min_Amount_NM",
+    "categorical__Payment_of_Min_Amount_No",
+    "categorical__Payment_of_Min_Amount_Yes",
+    "categorical__Payment_Behaviour_HighspentLargevaluepayments",
+    "categorical__Payment_Behaviour_HighspentMediumvaluepayments",
+    "categorical__Payment_Behaviour_HighspentSmallvaluepayments",
+    "categorical__Payment_Behaviour_LowspentLargevaluepayments",
+    "categorical__Payment_Behaviour_LowspentMediumvaluepayments",
+    "categorical__Payment_Behaviour_LowspentSmallvaluepayments"
+  ]
+}

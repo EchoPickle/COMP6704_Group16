@@ -1,0 +1,98 @@
+{
+  "seed": 42,
+  "archive_sha256": "a9c84b961b361a7f41fe80ef85d6b01d90068616e48da7ab134bd2a99e58dcac",
+  "original_files": {
+    "train_data_s.csv": {
+      "rows": 7884,
+      "customers": 4946,
+      "label_counts": {
+        "Standard": 4289,
+        "Poor": 2160,
+        "Good": 1435
+      }
+    },
+    "train_data_m.csv": {
+      "rows": 13141,
+      "customers": 6222,
+      "label_counts": {
+        "Standard": 7075,
+        "Poor": 3680,
+        "Good": 2386
+      }
+    },
+    "train_data_l.csv": {
+      "rows": 18397,
+      "customers": 6779,
+      "label_counts": {
+        "Standard": 9965,
+        "Poor": 5125,
+        "Good": 3307
+      }
+    },
+    "test_data.csv": {
+      "rows": 11265,
+      "customers": 5880,
+      "label_counts": {
+        "Standard": 6084,
+        "Poor": 3123,
+        "Good": 2058
+      }
+    }
+  },
+  "original_train_test_customer_overlap": {
+    "train_data_s.csv": 4000,
+    "train_data_m.csv": 5095,
+    "train_data_l.csv": 5575
+  },
+  "unique_rows": 29662,
+  "unique_customers": 7084,
+  "split_customer_overlap": 0,
+  "unused_training_pool_rows": 2338,
+  "splits": {
+    "small": {
+      "rows": 7884,
+      "customers": 4096,
+      "class_counts": [
+        2197,
+        4278,
+        1409
+      ]
+    },
+    "medium": {
+      "rows": 13141,
+      "customers": 4757,
+      "class_counts": [
+        3661,
+        7131,
+        2349
+      ]
+    },
+    "large": {
+      "rows": 18397,
+      "customers": 4940,
+      "class_counts": [
+        5126,
+        9983,
+        3288
+      ]
+    },
+    "validation": {
+      "rows": 4469,
+      "customers": 1063,
+      "class_counts": [
+        1256,
+        2378,
+        835
+      ]
+    },
+    "test": {
+      "rows": 4458,
+      "customers": 1063,
+      "class_counts": [
+        1215,
+        2419,
+        824
+      ]
+    }
+  }
+}

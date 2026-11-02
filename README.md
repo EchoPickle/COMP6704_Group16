@@ -32,6 +32,17 @@ objective, data/preprocessing details, and reproduction commands. This
 contribution includes source code and configuration; synthetic data, models,
 logs and figures are generated locally by the scripts.
 
+## L-BFGS
+
+[L-BFGS/](L-BFGS/) contains the squared-hinge linear SVM objective and gradients,
+an implemented L-BFGS two-loop optimizer, a GD control, OvR experiments,
+numerical verification, data preparation, and recorded aggregate results and
+figures used in the report. Raw customer records and trained models are not
+committed; the exact reference archive is obtained and verified locally.
+
+See [L-BFGS/README.md](L-BFGS/README.md) for the objective, customer-disjoint
+split, dependencies, reproduction commands and comparison limitations.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for uploading an algorithm implementation. Each member should keep their implementation in its own directory and submit changes through a branch/pull request.

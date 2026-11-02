@@ -1,0 +1,150 @@
+{
+  "C": 1000.0,
+  "repeats": 3,
+  "scale": [
+    {
+      "size": "small",
+      "n": 7884,
+      "d": 29,
+      "seconds_mean": 0.029622195666666684,
+      "seconds_std": 0.00011468060885053374,
+      "iterations": 178,
+      "accuracy": 0.6164199192462988,
+      "macro_f1": 0.5729962592107934,
+      "all_converged": true
+    },
+    {
+      "size": "medium",
+      "n": 13141,
+      "d": 29,
+      "seconds_mean": 0.07072479199999988,
+      "seconds_std": 0.0001491076231852066,
+      "iterations": 235,
+      "accuracy": 0.6159712875729026,
+      "macro_f1": 0.5765804850022427,
+      "all_converged": true
+    },
+    {
+      "size": "large",
+      "n": 18397,
+      "d": 29,
+      "seconds_mean": 0.10925994433333337,
+      "seconds_std": 0.00020639424606865646,
+      "iterations": 203,
+      "accuracy": 0.6150740242261103,
+      "macro_f1": 0.5747762005403773,
+      "all_converged": true
+    }
+  ],
+  "benchmark": [
+    {
+      "method": "Gradient descent",
+      "m": 0,
+      "seconds_mean": 6.598641486333334,
+      "seconds_std": 0.035508582591549855,
+      "iterations": 3000,
+      "evaluations": 30050,
+      "final_objective": 448.40471713465604,
+      "gradient_inf": 0.11579438311091216,
+      "success": false,
+      "status": "iteration_limit"
+    },
+    {
+      "method": "L-BFGS m=3",
+      "m": 3,
+      "seconds_mean": 0.03929426366666533,
+      "seconds_std": 0.00031315552854811946,
+      "iterations": 148,
+      "evaluations": 168,
+      "final_objective": 448.39511825955276,
+      "gradient_inf": 9.167620461714154e-06,
+      "success": true,
+      "status": "gradient_tolerance"
+    },
+    {
+      "method": "L-BFGS m=10",
+      "m": 10,
+      "seconds_mean": 0.038664903000000805,
+      "seconds_std": 0.0001054706628739501,
+      "iterations": 64,
+      "evaluations": 171,
+      "final_objective": 448.395118259552,
+      "gradient_inf": 8.504841301190929e-06,
+      "success": true,
+      "status": "gradient_tolerance"
+    },
+    {
+      "method": "L-BFGS m=20",
+      "m": 20,
+      "seconds_mean": 0.015524305666666294,
+      "seconds_std": 0.00018344103084071963,
+      "iterations": 48,
+      "evaluations": 62,
+      "final_objective": 448.39511825955304,
+      "gradient_inf": 4.374060581555095e-06,
+      "success": true,
+      "status": "gradient_tolerance"
+    }
+  ],
+  "real_data_validation": {
+    "custom_success": true,
+    "scipy_success": true,
+    "relative_objective_difference": 8.747186893157407e-15,
+    "prediction_agreement": 1.0,
+    "custom_gradient_inf": 8.504841301190929e-06,
+    "scipy_gradient_inf": 1.9677650996072216e-05
+  },
+  "tuning": [
+    {
+      "C": 0.01,
+      "validation_macro_f1": 0.2315369261477046,
+      "validation_accuracy": 0.5321100917431193,
+      "all_converged": true,
+      "max_gradient_inf": 7.613846209778528e-06
+    },
+    {
+      "C": 0.1,
+      "validation_macro_f1": 0.2315369261477046,
+      "validation_accuracy": 0.5321100917431193,
+      "all_converged": true,
+      "max_gradient_inf": 2.83102057202847e-06
+    },
+    {
+      "C": 1.0,
+      "validation_macro_f1": 0.3840612111368266,
+      "validation_accuracy": 0.5670172298053255,
+      "all_converged": true,
+      "max_gradient_inf": 8.562424741901092e-06
+    },
+    {
+      "C": 10.0,
+      "validation_macro_f1": 0.5714762873666465,
+      "validation_accuracy": 0.6099798612665026,
+      "all_converged": true,
+      "max_gradient_inf": 8.034749801795818e-06
+    },
+    {
+      "C": 100.0,
+      "validation_macro_f1": 0.5854112345509175,
+      "validation_accuracy": 0.6184828820765272,
+      "all_converged": true,
+      "max_gradient_inf": 9.090643902011364e-06
+    },
+    {
+      "C": 1000.0,
+      "validation_macro_f1": 0.5860050794841493,
+      "validation_accuracy": 0.6189304094875812,
+      "all_converged": true,
+      "max_gradient_inf": 9.13993848463741e-06
+    }
+  ],
+  "dimension": 29,
+  "sources": {
+    "reference_project": "../COMP6704-Group-24-Convex-Optimization",
+    "dataset": "https://www.kaggle.com/datasets/parisrohan/credit-score-classification",
+    "lbfgs": "https://users.iems.northwestern.edu/~nocedal/lbfgs.html",
+    "liu_nocedal_1989": "https://doi.org/10.1007/BF01589116",
+    "scipy_lbfgsb": "https://docs.scipy.org/doc/scipy/reference/optimize.minimize-lbfgsb.html",
+    "scipy_line_search": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.line_search.html"
+  }
+}
