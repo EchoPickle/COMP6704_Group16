@@ -1,0 +1,8 @@
+{
+  "custom_success": true,
+  "scipy_success": true,
+  "relative_objective_difference": 8.747186893157407e-15,
+  "prediction_agreement": 1.0,
+  "custom_gradient_inf": 8.504841301190929e-06,
+  "scipy_gradient_inf": 1.9677650996072216e-05
+}

@@ -1,0 +1,40 @@
+{
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "processor": "arm",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "scipy": "1.13.1",
+  "sklearn": "1.6.1",
+  "threads": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "version": "0.3.23.dev",
+      "threading_layer": "pthreads",
+      "architecture": "armv8"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "version": "0.3.27",
+      "threading_layer": "pthreads",
+      "architecture": "neoversen1"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "version": null
+    }
+  ],
+  "seed": 42,
+  "repeats": 3,
+  "run_local_time": "2026-10-24 10:18:15 +0800",
+  "timing_scope": "binary solver / sum of three sequential OvR solvers; excludes preprocessing and prediction"
+}

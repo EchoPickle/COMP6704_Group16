@@ -1,0 +1,11 @@
+{
+  "f": 448.39511825955594,
+  "ginf": 1.9677650996072216e-05,
+  "nit": 68,
+  "nfev": 76,
+  "seconds": 0.016939124999999944,
+  "success": true,
+  "status": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+  "skipped_updates": 0,
+  "fallback_steps": 0
+}

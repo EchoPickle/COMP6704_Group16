@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+.mplconfig/
+.DS_Store
+.env
+data/*
+!data/README.md
+runs/
+results/
+results_rerun/
+*.joblib
+*.npz
